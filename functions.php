@@ -98,20 +98,20 @@ function zain_register_sidebar()
      register_sidebar(array(
         'name' => __('Primary Sidebar 1', 'theme_name'),   //register in appreance/widgets
         'id' => 'sidebar-1', //for drag and drop/ show on front end from this id
-        'before_widget' => 'aside id="%1$s" class="widget %2$s"',
-        'after_widget' => '/aside',
-        'before_title' => 'h1 class="widget-title"',
-        'after_title' => '/h1',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
     ));
 
      //Primary Sidebar 2 will created
  register_sidebar(array(
         'name' => __('Primary Sidebar 2', 'theme_name'),
         'id' => 'sidebar-2',
-        'before_widget' => 'aside id="%1$s" class="widget %2$s"',
-        'after_widget' => '/aside',
-        'before_title' => 'h1 class="widget-title"',
-        'after_title' => '/h1',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
     ));
 }
 

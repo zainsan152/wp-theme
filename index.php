@@ -58,6 +58,32 @@
 
 
 	  <!-- post area end -->
+
+
+
+	  <!-- sidebar code -->
+		<?php if(is_active_sidebar('sidebar-1')): ?>
+			<div id="secondary" class="sidebar-container" role="complementary">
+				<div class="widget-area">
+					<?php dynamic_sidebar('sidebar-1'); ?>
+				</div>
+			</div>
+		<?php endif; ?>
+
+		<?php if(is_active_sidebar('sidebar-2')): ?>
+			<div id="secondary" class="sidebar-container" role="complementary">
+				<div class="widget-area">
+					<?php dynamic_sidebar('sidebar-2'); ?>
+				</div>
+			</div>
+		<?php endif; ?>
+
+		<?php get_search_form(); 
+		 //should be used with sidebar code?>
+		
+
+
+	  <!-- sidebar code ends-->
       <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Kusina</a>
